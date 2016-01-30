@@ -1,0 +1,72 @@
+//Header stuff....
+
+#global-nav
+  position: relative
+  font-size: 1.3rem
+  font-weight: $thin
+  color: white
+
+  li
+    display: inline-block
+    position: relative
+    margin: 0 rem-calc(40px) 0 rem-calc(20px)
+    vertical-align: middle
+
+  #site-logo
+    position: inherit
+    padding: rem-calc(20px)
+
+    h1
+      display: inline
+      position: relative
+      font-size: 2rem
+      font-weight: $thin
+
+    .icon
+      display: inline
+      font-size: rem-calc(30px)
+
+  #navigation
+    float: right
+    position: relative
+    padding: rem-calc(28px) 0 0 0
+    text-align: right
+
+//Top Section
+
+#top
+  position: absolute
+  top: 0
+  width: 100%
+
+  #top-background
+    position: relative
+    width: 100%
+    height: 700px
+    background-attachment: scroll
+    background-image: url('../img/skylinenight.jpeg')
+    background-position: 20%
+    background-repeat: no-repeat
+    background-size: 100%
+
+  #catch
+    position: relative
+    padding: rem-calc(20px)
+    top: 20%
+    text-align: center
+    color: white
+    @include bp(min,1200px)
+      width: 80%
+
+    h1
+      font-size: 3rem
+      font-weight: $thin
+
+    .catch-content
+      display: block
+      position: relative
+      margin: 20px auto
+      width: 500px
+      font-size: 1.23rem
+      font-weight: $thin
+      text-align: center

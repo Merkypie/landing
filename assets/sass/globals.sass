@@ -1,9 +1,38 @@
-//Fonts
+//Globals
 
+*
+  margin: 0 auto
+  padding: 0
+  box-sizing: border-box
 
+body
+  font-family: $lato
+  font-size: 63.5%
 
-//Containers, Grids
+//Containers, Divs, etc Specific
 
+header
+  position: relative
+  width: 100%
+  z-index: 9001 //its over 9000
 
+//Fixes
 
-//Images, Logos
+.clearfix
+  @include clearfix
+
+.top-left
+  float: left
+
+.top-right
+  float: right
+
+//Grid Stuff
+
+.wide-block
+  @include bp(min,1200px)
+    width: 100%
+
+.large-block
+  @include bp(min,1200px)
+    width: 50%
