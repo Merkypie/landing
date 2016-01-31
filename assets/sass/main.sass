@@ -1,0 +1,57 @@
+//Tabbed Buckets
+
+#features-container
+  position: relative
+
+  #features-tabs
+    @include bp(min,1200px)
+      width: 200px
+      position: absolute
+    right: 0
+    top: 0
+    z-index: 3
+
+    ul
+      list-style: none
+
+      li.feature-tab:hover
+        transition: all 1s ease
+
+      li.feature-tab
+        width: 100%
+        padding: rem-calc(80px) 0 rem-calc(20px) 0
+        @include hoverer(background-color, $grey, rgba($grey,0.4))
+        border-bottom: 1px solid rgba(black,0.12)
+        border-left: 1px solid rgba(black,0.12)
+        font-size: 1.28rem
+        text-align: center
+
+        .fa
+          display: block
+
+        .tab-name
+          @extend .fa
+          margin: 1rem auto 1rem auto
+          width: 110px
+          border-top: 4px solid $purpletabs
+          font-size: 1.12rem
+          text-transform: uppercase
+
+
+  #features
+    position: relative
+    padding-right: rem-calc(240px)
+    z-index: 2
+
+    #connect
+      position: relative
+      padding: 20px
+      border-top: 10px solid $purpletabs
+      font-size: 1.3rem
+      line-height: rem-calc(40px)
+
+    #explore
+      @extend #connect
+
+    #share
+      @extend #connect
