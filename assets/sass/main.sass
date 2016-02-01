@@ -33,7 +33,6 @@
     display: block
     margin: rem-calc(20px) 0 rem-calc(40px) 0
 
-
 //Tabbed Buckets
 
 #features-container
@@ -44,7 +43,7 @@
       width: 200px
     @include bp(max,992px)
       width: 150px
-    @include bp(max,600px)
+    @include bp(max,768px)
       position: relative
       width: 100%
     position: absolute
@@ -57,7 +56,7 @@
       list-style: none
 
       .active
-        @include bp(max,600px)
+        @include bp(max,768px)
           border-bottom: 1px solid white !important
           border-right: none
           border-left: none !important
@@ -69,7 +68,7 @@
         transition: all 0.5s ease
 
       li.feature-tab
-        @include bp(max,600px)
+        @include bp(max,768px)
           display: inline-block
           width: 32.98%
         width: 100%
@@ -97,7 +96,7 @@
 
 
   #features
-    @include bp(max,600px)
+    @include bp(max,768px)
       padding-right: 0
     position: relative
     padding-right: rem-calc(200px)
@@ -143,3 +142,69 @@
     width: 100%
     //height: 100%
     overflow: hidden
+
+//JSON Container
+
+#json
+  @extend #what-is-it
+  padding-top: 20px
+  padding-bottom: 20px
+  background-color: white
+
+  h1
+    margin-bottom: rem-calc(120px) !important
+
+  ul#traveler-voice
+    @include bp(max,768px)
+      width: 300px
+    position: relative
+    width: 550px
+    text-align: center
+
+    li
+      display: inline-block
+      width: inherit
+      vertical-align: middle
+
+      img
+        @include bp(max,768px)
+          width: 150px
+          height: 150px
+        width: 200px
+        height: 200px
+        border-radius: 50%
+
+      span.traveler-voices
+        display: block
+        margin-top: 2rem
+
+  ul#traveler-navigation
+    position: relative
+    top: -230px
+    list-style: none
+    transform: translate(0, -50%)
+
+    li
+      @include bp(max,768px)
+        font-size: 1.5rem
+      position: absolute
+      padding: 20px
+      font-size: 3rem
+      font-weight: $thin
+      transition: all 0.4s ease
+      z-index: 5
+
+      a
+        @include bp(max,768px)
+          padding: 10px
+        display: block
+        padding: 20px
+        border: 1px solid $purpletabs
+        border-radius: 50%
+        color: $purpletabs
+
+    li.nav-prev
+      left: 0
+
+    li.nav-next
+      right: 0

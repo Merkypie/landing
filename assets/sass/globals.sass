@@ -15,6 +15,8 @@ p
 //Containers, Divs, etc Specific
 
 header
+  @include bp(max,768px)
+    height: 80px
   position: relative
   width: 100%
   z-index: 9001 //its over 9000
@@ -57,15 +59,17 @@ header
 //Grid Stuff
 
 .wide-block
-  @include bp(min,1200px)
-    width: 100%
+  width: 100%
 
 .large-block
   @include bp(min,1200px)
     width: 50%
-  @include bp(max,775px)
+  @include bp(max,768px)
     width: 100%
   width: 50%
+
+.small-block
+  width: 33.333%
 
 //Fonts
 

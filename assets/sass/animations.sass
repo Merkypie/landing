@@ -2,10 +2,21 @@
   animation: ltor 1s ease
   opacity: 1
 
+.slide-right-to-left
+  animation: rtol 1s ease
+  opacity: 1
 
 @keyframes ltor
   0%
     transform: translate(-10%, 0)
+    opacity: 0
+  100%
+    transform: translate(0,0)
+    opacity: 1
+
+@keyframes rtol
+  0%
+    transform: translate(10%, 0)
     opacity: 0
   100%
     transform: translate(0,0)
