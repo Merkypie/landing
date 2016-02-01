@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--[if lt IE11]><script type="text/javascript">window.location.replace();</script><![ENDIF]-->
   <title>Travelise :: Wisely Travel the World with a Swipe</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/js/tabby.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </head>
 <body>
   <div id="wrapper">
@@ -35,32 +40,51 @@
       </div>
     </div>
     <main id="content" class="clearfix">
-      <div id="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div id="what-is-it" class="wide-block clearfix">
+        <div id="sell-it">
+          <h1>Be the Almighty Wise Traveler</h1>
+          <span class="contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </div>
+         <div id="app-showcase">
+           <div id="iphone-app" class="large-block top-left hide">
+             <img src="assets/img/iphone.png" />
+           </div>
+           <div id="app-features" class="large-block top-left">
+             <h2>The World at Your Fingertips</h2>
+             <span class="contents">Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+             <h2>Be on the Know</h2>
+             <span class="contents">Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+         </div>
+       </div>
+      </div>
       <div id="features-container">
         <div id="features-tabs">
           <ul>
-            <li class="feature-tab">
+            <li class="feature-tab active">
               <i class="fa fa-connectdevelop"></i>
-              <span class="tab-name">Connect</span>
+              <span class="tab-name"><a href="#connect">Connect</a></span>
           </li>
             <li class="feature-tab">
               <i class="fa fa-map-marker"></i>
-              <span class="tab-name">Explore</span>
+              <span class="tab-name"><a href="#explore">Explore</a></span>
             </li>
             <li class="feature-tab">
               <i class="fa fa-share-square-o"></i>
-              <span class="tab-name">Share</span>
+              <span class="tab-name"><a href="#share">Share</a></span>
           </li>
           </ul>
         </div>
         <div id="features">
-          <section id="connect">
+          <section id="connect" class="features-panel active-panel">
+            FEATURES
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </section>
-          <section id="explore">
+          <section id="explore" class="features-panel inactive-panel">
+            ECPLOEKRAES
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </section>
-          <section id="share">
+          <section id="share" class="features-panel inactive-panel">
+            SHAREEE
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </section>
         </div>

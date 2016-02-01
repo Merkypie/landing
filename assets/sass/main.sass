@@ -1,3 +1,38 @@
+//Top Section -- What is it
+
+#what-is-it
+  position: relative
+  background-color: rgba($grey,0.7)
+  font-size: 1.2rem
+  font-weight: $thin
+  line-height: rem-calc(30px)
+
+  #sell-it
+    padding: 30px
+
+  h1
+    display: block
+    margin: rem-calc(20px) 0 rem-calc(40px) 0
+    font-size: 3rem
+    font-weight: $thin
+    letter-spacing: 1px
+    text-align: center
+
+  h2
+    display: block
+    padding-bottom: rem-calc(15px)
+    margin: 0 0 2rem 0
+    width: 500px
+    border-bottom: 4px solid black
+    font-size: 2rem
+    font-weight: $thin
+    letter-spacing: rem-calc(2px)
+
+  .contents
+    display: block
+    margin: rem-calc(20px) 0 rem-calc(40px) 0
+
+
 //Tabbed Buckets
 
 #features-container
@@ -14,8 +49,13 @@
     ul
       list-style: none
 
+      .active
+        background-color: white !important
+        border-left: 1px solid white !important
+        border-right: 3px solid $purpletabs
+
       li.feature-tab:hover
-        transition: all 1s ease
+        transition: all 0.5s ease
 
       li.feature-tab
         width: 100%
@@ -37,21 +77,24 @@
           font-size: 1.12rem
           text-transform: uppercase
 
+        a
+          text-decoration: none
+
 
   #features
     position: relative
-    padding-right: rem-calc(240px)
+    padding-right: rem-calc(200px)
     z-index: 2
 
-    #connect
+    .features-panel
       position: relative
       padding: 20px
-      border-top: 10px solid $purpletabs
+      min-height: 500px
       font-size: 1.3rem
       line-height: rem-calc(40px)
 
-    #explore
-      @extend #connect
+    .active-panel
+      display: block
 
-    #share
-      @extend #connect
+    .inactive-panel
+      display: none
