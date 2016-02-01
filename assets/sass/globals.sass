@@ -9,6 +9,9 @@ body
   font-family: $lato
   font-size: 63.5%
 
+p
+  margin: 2rem 0 2rem 0
+
 //Containers, Divs, etc Specific
 
 header
@@ -18,6 +21,24 @@ header
 
 #content
   position: relative
+
+.button
+  display: block
+  padding: 10px
+  margin: 2rem 0 2rem 0
+  width: 150px
+  font-size: 1.3rem
+  font-weight: $thin
+  text-align: center
+  color: white
+  @include hoverer(background-color, $purpletabs, tint($purpletabs,15%))
+
+  a
+    color: white
+    text-decoration: none
+
+.button:hover
+  transition: all 0.8s ease
 
 //Fixes and Floats
 
@@ -42,3 +63,23 @@ header
 .large-block
   @include bp(min,1200px)
     width: 50%
+  @include bp(max,775px)
+    width: 100%
+  width: 50%
+
+//Fonts
+
+h2
+  @include bp(max,992px)
+    width: 400px
+  @include bp(max,768px)
+    width: 300px
+    margin-left: 2rem
+  display: block
+  padding-bottom: rem-calc(15px)
+  margin: 0 0 2rem 0
+  width: 500px
+  border-bottom: 4px solid $purpletabs
+  font-size: 2rem
+  font-weight: $thin
+  letter-spacing: rem-calc(2px)

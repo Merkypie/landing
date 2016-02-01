@@ -2,7 +2,7 @@
 
 #what-is-it
   position: relative
-  background-color: rgba($grey,0.7)
+  background-color: rgba($grey,0.38)
   font-size: 1.2rem
   font-weight: $thin
   line-height: rem-calc(30px)
@@ -10,7 +10,16 @@
   #sell-it
     padding: 30px
 
+  #app-showcase
+
+    img
+      @include bp(max,768px)
+        margin-bottom: rem-calc(40px)
+      width: 100%
+
   h1
+    @include bp(max,768px)
+      line-height: rem-calc(50px)
     display: block
     margin: rem-calc(20px) 0 rem-calc(40px) 0
     font-size: 3rem
@@ -18,17 +27,9 @@
     letter-spacing: 1px
     text-align: center
 
-  h2
-    display: block
-    padding-bottom: rem-calc(15px)
-    margin: 0 0 2rem 0
-    width: 500px
-    border-bottom: 4px solid black
-    font-size: 2rem
-    font-weight: $thin
-    letter-spacing: rem-calc(2px)
-
   .contents
+    @include bp(max,768px)
+      margin-left: 2rem
     display: block
     margin: rem-calc(20px) 0 rem-calc(40px) 0
 
@@ -41,7 +42,13 @@
   #features-tabs
     @include bp(min,1200px)
       width: 200px
-      position: absolute
+    @include bp(max,992px)
+      width: 150px
+    @include bp(max,600px)
+      position: relative
+      width: 100%
+    position: absolute
+    width: 200px
     right: 0
     top: 0
     z-index: 3
@@ -50,6 +57,10 @@
       list-style: none
 
       .active
+        @include bp(max,600px)
+          border-bottom: 1px solid white !important
+          border-right: none
+          border-left: none !important
         background-color: white !important
         border-left: 1px solid white !important
         border-right: 3px solid $purpletabs
@@ -58,6 +69,9 @@
         transition: all 0.5s ease
 
       li.feature-tab
+        @include bp(max,600px)
+          display: inline-block
+          width: 32.98%
         width: 100%
         padding: rem-calc(80px) 0 rem-calc(20px) 0
         @include hoverer(background-color, $grey, rgba($grey,0.4))
@@ -76,25 +90,56 @@
           border-top: 4px solid $purpletabs
           font-size: 1.12rem
           text-transform: uppercase
+          letter-spacing: 1px
 
         a
           text-decoration: none
 
 
   #features
+    @include bp(max,600px)
+      padding-right: 0
     position: relative
     padding-right: rem-calc(200px)
+    min-height: 537px
     z-index: 2
 
     .features-panel
       position: relative
       padding: 20px
-      min-height: 500px
       font-size: 1.3rem
+      font-weight: $thin
       line-height: rem-calc(40px)
+
+      ul
+        width: 500px
 
     .active-panel
       display: block
 
     .inactive-panel
       display: none
+
+//Youtube
+
+#video
+  position: relative
+  background-color: rgba($grey,0.38)
+
+  #yt-container
+    @include bp(max,1180px)
+      width: 100%
+
+  #video-sidebar
+    @include bp(max,1180px)
+      width: 100%
+      padding: 20px
+    position: relative
+    padding: 80px 50px 0 50px
+    font-size: 1.2rem
+    line-height: 2.5rem
+
+  iframe, embed, object
+    width: 100%
+    //height: 100%
+    overflow: hidden

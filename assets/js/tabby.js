@@ -22,6 +22,7 @@ $(document).ready(function(){
       p = '#'+i;
       if (p === a) {
         $(this).addClass('active-panel').removeClass('inactive-panel');
+        $('p, ul').removeClass('hide').addClass('slide-left-to-right');
       }else if(p !== a){
         $(this).removeClass('active-panel').addClass('inactive-panel');
       }
