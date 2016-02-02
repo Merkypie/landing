@@ -22,4 +22,4 @@ As per requested
 There was more things I was thinking of doing but not enough time to do so with the current
 work schedule but hopefully this can convey my general method of madness.
 
-You can see the excerise in action [over here](http://gudesigns.co/excerise/landing).
+You can see the excerise in action [over here](http://gudesigns.co/exercise/landing/).
