@@ -12,6 +12,10 @@ $(document).ready(function() {
     }else if(w.scrollTop() == 0){ //or like idk
       nav.removeClass('sticky-header'); //remove it
     }
+    if(w.scrollTop() > 1480){
+      $('#video-sidebar > span').addClass('slide-down')
+      .css('display','block');
+    }
   });
 
   //JSON
@@ -76,6 +80,10 @@ $(document).ready(function() {
             slideBck();
             tr.siblings('li').removeClass('slide-left-to-right');
           });
+
+          setInterval(function(){
+            slideFwd();
+          }, 4000);
         }
         slideThrough();
       },

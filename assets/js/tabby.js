@@ -6,8 +6,11 @@ $(document).ready(function(){
   t.click(function(e) {
     e = $(this);
     e.each(function() {
-      if(e.not('.active')){
-        e.addClass('active').siblings('li').removeClass('active');
+      if(e.not('.active')){ //If the tab is not currently labeled active, then add the class and remove it from the sibling elements
+
+        e.addClass('active')
+        .siblings('li')
+        .removeClass('active');
       }
     });
   });
@@ -20,10 +23,14 @@ $(document).ready(function(){
     panel.each(function(i, p) {
       i = $(this).attr('id')
       p = '#'+i;
-      if (p === a) {
+      if (p === a) { //If the anchor tag is identical to the related div's id, SWITCH IT
         $(this).addClass('active-panel').removeClass('inactive-panel');
-        $('#features p, #features ul').removeClass('hide').addClass('slide-left-to-right');
-      }else if(p !== a){
+
+        $('#features p, #features ul')
+        .removeClass('hide')
+        .addClass('slide-left-to-right');
+
+      }else if(p !== a){ //or idk don't show them if they're not.
         $(this).removeClass('active-panel').addClass('inactive-panel');
       }
     });
