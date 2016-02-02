@@ -21,6 +21,12 @@ header
   width: 100%
   z-index: 9001 //its over 9000
 
+#wrapper, footer
+  position: relative
+  width: 100%
+  @include bp(iphone6-plus)
+    width: 130%
+
 #content
   position: relative
 
